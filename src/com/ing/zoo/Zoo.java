@@ -1,5 +1,10 @@
 package com.ing.zoo;
 
+import com.ing.zoo.animals.*;
+import com.ing.zoo.capabilities.IDoesTricks;
+import com.ing.zoo.capabilities.IEatsLeaves;
+import com.ing.zoo.capabilities.IEatsMeat;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;

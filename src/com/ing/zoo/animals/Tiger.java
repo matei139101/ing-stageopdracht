@@ -1,4 +1,7 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.capabilities.IDoesTricks;
+import com.ing.zoo.capabilities.IEatsMeat;
 
 import java.util.Random;
 

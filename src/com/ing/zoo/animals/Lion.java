@@ -1,4 +1,6 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.capabilities.IEatsMeat;
 
 public class Lion extends Animal implements IEatsMeat {
     public String name;

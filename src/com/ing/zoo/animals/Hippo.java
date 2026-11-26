@@ -1,6 +1,8 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
 
-public class Hippo extends Animal implements IEatsLeaves{
+import com.ing.zoo.capabilities.IEatsLeaves;
+
+public class Hippo extends Animal implements IEatsLeaves {
     String helloText = "splash";
     String eatText = "munch munch lovely";
 

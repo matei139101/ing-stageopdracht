@@ -1,8 +1,8 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
 
-import java.util.Random;
+import com.ing.zoo.capabilities.IEatsLeaves;
 
-public class Zebra extends Animal implements  IEatsLeaves {
+public class Zebra extends Animal implements IEatsLeaves {
     public String name;
     public String helloText;
     public String eatText;
