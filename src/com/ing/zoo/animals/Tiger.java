@@ -6,9 +6,8 @@ import com.ing.zoo.capabilities.IEatsMeat;
 import java.util.Random;
 
 public class Tiger extends Animal implements IEatsMeat, IDoesTricks {
-    public String name;
-    public String helloText;
-    public String eatText;
+    public String helloText = "rraaarww";
+    public String eatText = "nomnomnom oink wubalubadubdub";
     public String trick;
 
     public Tiger(String name)
@@ -18,13 +17,11 @@ public class Tiger extends Animal implements IEatsMeat, IDoesTricks {
 
     public void sayHello()
     {
-        helloText = "rraaarww";
         System.out.println(helloText);
     }
 
     public void eatMeat()
     {
-        eatText = "nomnomnom oink wubalubadubdub";
         System.out.println(eatText);
     }
 

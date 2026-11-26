@@ -7,8 +7,7 @@ import com.ing.zoo.capabilities.IEatsMeat;
 import java.util.Random;
 
 public class Pig extends Animal implements IEatsMeat, IEatsLeaves, IDoesTricks {
-    public String name;
-    public String helloText;
+    public String helloText = "splash";
     public String eatText;
     public String trick;
 
@@ -19,7 +18,6 @@ public class Pig extends Animal implements IEatsMeat, IEatsLeaves, IDoesTricks {
 
     public void sayHello()
     {
-        helloText = "splash";
         System.out.println(helloText);
     }
 

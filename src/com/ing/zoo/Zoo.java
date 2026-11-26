@@ -32,7 +32,7 @@ public class Zoo {
         String input = scanner.nextLine();
 
         if (input.equals(commands[0])) {
-            System.out.print("Wie wilt u voeren: ");
+            System.out.print("Tegen wie praat u: ");
             String name = scanner.nextLine();
 
             Animal animal = animals.stream()

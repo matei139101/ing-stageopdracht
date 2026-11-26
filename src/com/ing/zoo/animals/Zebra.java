@@ -3,10 +3,8 @@ package com.ing.zoo.animals;
 import com.ing.zoo.capabilities.IEatsLeaves;
 
 public class Zebra extends Animal implements IEatsLeaves {
-    public String name;
-    public String helloText;
-    public String eatText;
-    public String trick;
+    public String helloText = "zebra zebra";
+    public String eatText = "munch munch zank yee bra";
 
     public Zebra(String name)
     {
@@ -15,13 +13,11 @@ public class Zebra extends Animal implements IEatsLeaves {
 
     public void sayHello()
     {
-        helloText = "zebra zebra";
         System.out.println(helloText);
     }
 
     public void eatLeaves()
     {
-        eatText = "munch munch zank yee bra";
         System.out.println(eatText);
     }
 }
