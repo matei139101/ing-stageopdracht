@@ -49,7 +49,9 @@ public class Zoo {
                     .filter(a -> a instanceof IEatsMeat)
                     .forEach(a -> ((IEatsMeat) a).eatMeat());
         } else if (input.equals(commands[3])) {
-
+            animals.stream()
+                    .filter(a -> a instanceof IDoesTricks)
+                    .forEach(a -> ((IDoesTricks) a).performTrick());
         } else {
             System.out.println("Unknown command: " + input);
         }
