@@ -41,10 +41,16 @@ public class Zoo {
         if (input.equals(commands[0])) {
             // Handling hello commands
             // Prints out all animal names so the user knows their options
-            System.out.print("Tegen wie praat u? Beschikbare dieren: ");
+            System.out.print("Tegen wie praat u? Je kan alle dieren aanspreken door geen naam in te voeren. Beschikbare dieren: ");
             for (Animal animal : animals) System.out.print("| " + animal.getName() + " |");
             System.out.println();
             String name = scanner.nextLine();
+
+            // Calls all animals if no name was given
+            if (name.isEmpty()) {
+                for (Animal animal : animals) animal.sayHello();
+                return;
+            }
 
             // Searches for the animal with the correct name
             Animal animal = animals.stream()
