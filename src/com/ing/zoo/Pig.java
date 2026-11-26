@@ -8,8 +8,9 @@ public class Pig extends Animal implements IEatsMeat, IEatsLeaves {
     public String eatText;
     public String trick;
 
-    public Pig()
+    public Pig(String name)
     {
+        super(name);
     }
 
     public void sayHello()

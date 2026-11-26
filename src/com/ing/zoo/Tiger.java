@@ -8,8 +8,9 @@ public class Tiger extends Animal implements IEatsMeat {
     public String eatText;
     public String trick;
 
-    public Tiger()
+    public Tiger(String name)
     {
+        super(name);
     }
 
     public void sayHello()

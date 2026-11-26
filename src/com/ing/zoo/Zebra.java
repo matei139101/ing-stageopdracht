@@ -8,8 +8,9 @@ public class Zebra extends Animal implements  IEatsLeaves {
     public String eatText;
     public String trick;
 
-    public Zebra()
+    public Zebra(String name)
     {
+        super(name);
     }
 
     public void sayHello()
