@@ -1,26 +1,26 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.capabilities.IDoesTricks;
+import com.ing.zoo.capabilities.IEatsMeat;
 
 import java.util.Random;
 
-public class Tiger {
-    public String name;
-    public String helloText;
-    public String eatText;
+public class Dog extends Animal implements IEatsMeat, IDoesTricks {
+    public String helloText = "woof woof!";
+    public String eatText = "woofing very much";
     public String trick;
 
-    public Tiger()
-    {
+    public Dog(String name) {
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "rraaarww";
         System.out.println(helloText);
     }
 
     public void eatMeat()
     {
-        eatText = "nomnomnom oink wubalubadubdub";
         System.out.println(eatText);
     }
 
@@ -30,11 +30,11 @@ public class Tiger {
         int rnd = random.nextInt(2);
         if(rnd == 0)
         {
-            trick = "jumps in tree";
+            trick = "runs after its own tail";
         }
         else
         {
-            trick = "scratches ears";
+            trick = "digs up treasure";
         }
         System.out.println(trick);
     }

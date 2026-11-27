@@ -1,20 +1,23 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.capabilities.IDoesTricks;
+import com.ing.zoo.capabilities.IEatsLeaves;
+import com.ing.zoo.capabilities.IEatsMeat;
 
 import java.util.Random;
 
-public class Pig {
-    public String name;
-    public String helloText;
+public class Pig extends Animal implements IEatsMeat, IEatsLeaves, IDoesTricks {
+    public String helloText = "splash";
     public String eatText;
     public String trick;
 
-    public Pig()
+    public Pig(String name)
     {
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "splash";
         System.out.println(helloText);
     }
 

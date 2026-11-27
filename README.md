@@ -1,4 +1,13 @@
 ﻿# Zoo Java Console Application
+ ---
+ ## Proces
+
+Ik heb de meest basic functionaliteiten van dieren verplaatst naar een abstract class Animal en de rest naar IEatsLeaves, IEatsMeat en IDoesTricks interfaces. Daarnaast heb ik ook de main executable aangepast om de verschillende commandos uit te kunnen voeren op de bijhorende dieren door gebruik te maken van java streaming filters.
+
+## Mening over de opdracht
+
+Terwijl de opdracht in een oogopzicht vrij makkelijk is, vond ik het best slim aangezien je veel dingen op slimmere manieren kan doen. Waardoor je minder hoeft te hardcoden en beter uitbreidbaar kan maken voor de toekomst.
+
 ---
 ## Git
 
